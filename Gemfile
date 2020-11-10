@@ -11,7 +11,7 @@ gem 'yajl-ruby', :require => 'yajl'
 
 #gem 'ruote', '~> 2.1.11'
 #gem 'ruote', :path => '~/w/ruote/'
-gem 'ruote', :git => 'git://github.com/jmettraux/ruote.git'
+gem 'ruote', git: 'git@github.com:ifad/ruote.git', branch: 'chore/remove-fixnum-deprecations'
 
 gem 'rake'
 
@@ -21,3 +21,4 @@ gem 'rake'
 #  gem 'webrat', '0.7.3'
 #end
 
+gem 'sinatra-respond_to', git: 'git@github.com:ifad/sinatra-respond_to.git', branch: 'feature/sinatra2'
