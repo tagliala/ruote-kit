@@ -26,7 +26,7 @@ describe RuoteKit do
       RuoteKit.engine.wait_for('terminated')
 
       @wi.h.delete('_rev')
-      RuoteKit.engine.storage.put(@wi.h)
+      RuoteKit.engine.storage.put(@wi.h.to_h)
     end
 
     after(:all) do
