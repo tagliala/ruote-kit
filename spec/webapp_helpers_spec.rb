@@ -115,7 +115,7 @@ describe RuoteKit::Helpers::RenderHelpers do
 
       html = @resource.to_html
 
-      html.index("  1\n  to\n  7\n  of\n  201\n  processes").should > 0
+      html.index("1\nto\n7\nof\n201\nprocesses").should > 0
 
       html.should have_selector(
         'a', :href => '/_ruote/processes', :rel => 'all')
@@ -137,7 +137,7 @@ describe RuoteKit::Helpers::RenderHelpers do
 
       html = @resource.to_html
 
-      html.index("  8\n  to\n  14\n  of\n  201\n  processes").should_not be(nil)
+      html.index("8\nto\n14\nof\n201\nprocesses").should_not be(nil)
 
       html.should have_selector(
         'a', :href => '/_ruote/processes', :rel => 'all')
@@ -159,7 +159,7 @@ describe RuoteKit::Helpers::RenderHelpers do
 
       html = @resource.to_html
 
-      html.index("  15\n  to\n  21\n  of\n  201\n  processes").should_not be(nil)
+      html.index("15\nto\n21\nof\n201\nprocesses").should_not be(nil)
 
       html.should have_selector(
         'a', :href => '/_ruote/processes', :rel => 'all')
@@ -181,7 +181,7 @@ describe RuoteKit::Helpers::RenderHelpers do
 
       html = @resource.to_html
 
-      html.index("  190\n  to\n  196\n  of\n  201\n  processes").should_not be(nil)
+      html.index("190\nto\n196\nof\n201\nprocesses").should_not be(nil)
 
       html.should have_selector(
         'a', :href => '/_ruote/processes', :rel => 'all')
@@ -203,7 +203,7 @@ describe RuoteKit::Helpers::RenderHelpers do
 
       html = @resource.to_html
 
-      html.index("  197\n  to\n  201\n  of\n  201\n  processes").should_not be(nil)
+      html.index("197\nto\n201\nof\n201\nprocesses").should_not be(nil)
 
       html.should have_selector(
         'a', :href => '/_ruote/processes', :rel => 'all')
@@ -225,7 +225,7 @@ describe RuoteKit::Helpers::RenderHelpers do
 
       html = @resource.to_html
 
-      html.index("  1\n  to\n  3\n  of\n  3\n  processes").should_not be(nil)
+      html.index("1\nto\n3\nof\n3\nprocesses").should_not be(nil)
 
       html.should have_selector(
         'a', :href => '/_ruote/processes', :rel => 'all')
@@ -261,7 +261,7 @@ describe RuoteKit::Helpers::RenderHelpers do
 
       html = @resource.to_html
 
-      html.index("  0\n  to\n  0\n  of\n  0\n  processes").should_not be(nil)
+      html.index("0\nto\n0\nof\n0\nprocesses").should_not be(nil)
 
       html.should have_selector(
         'a', :href => '/_ruote/processes', :rel => 'all')
@@ -283,7 +283,7 @@ describe RuoteKit::Helpers::RenderHelpers do
 
       html = @resource.to_html
 
-      html.index("  1\n  to\n  10\n  of\n  10\n  processes").should_not be(nil)
+      html.index("1\nto\n10\nof\n10\nprocesses").should_not be(nil)
 
       # perhaps a redirection to the same url but with a sane param would be
       # more appropriate?
@@ -297,7 +297,7 @@ describe RuoteKit::Helpers::RenderHelpers do
 
       html = @resource.to_html
 
-      html.index("  6\n  to\n  10\n  of\n  10\n  processes").should_not be(nil)
+      html.index("6\nto\n10\nof\n10\nprocesses").should_not be(nil)
 
       # perhaps a redirection to the same url but with a sane param would be
       # more appropriate?
